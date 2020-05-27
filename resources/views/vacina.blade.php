@@ -43,10 +43,10 @@
                         <a href="{{route('index')}}">Inicio</a>
                     </li>
                     <li>
-                        <a href="{{route('shop')}}">Serviços</a>
+                        <a href="">Serviços</a>
                     </li>
                     <li>
-                        <a href="">Shop</a>
+                        <a href="{{route('shop')}}">Shop</a>
                     </li>
                     <li>
                         <a href="">Blog</a>
@@ -70,88 +70,21 @@
     <div class="col-100 bloco-imagens-texto">
         <div class="content" style="margin-left: 24%; float: left;">
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/bebedouro.png">
+                <img src="assets/img/vacina.png">
                 <p>
-                    Bebedouro chalesco hamster bico azul
+                   IMPORTANCIA DA VACINAÇÃO
+                   A imunização protege não só o animal, mas toda a família.
                 </p>
-                <p><b>
-                    R$ 26,90
-                </b></p>
             </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/caesadultos.png" >
+            <div class="col-1 bloco-texto bloco-imagem">
                 <p>
-                    Ração Royal Canin maxi - Cães adultos - 15kg
+                    A imunização pode garantir que os animais de estimação tenham uma vida plena e feliz. Como parte de sua política de educação sobre a posse responsável, isto é, a conscientização do tutor do pet de suas responsabilidades sobre o bem-estar e a saúde física e psicológica do bicho, a Associação Brasileira da Indústria de Produtos para Animais de Estimação (Abinpet) entrevistou a veterinária Marina Nogueira Teixeira, do Centro de Saúde Animal Jardins, para esclarecer a importância da vacinação.
+                    De acordo com a especialista, “a vacinação é fundamental para saúde do pet, uma vez que ainda é o método mais confiável e eficaz de proteção contra doenças infecciosas. As vacinas estimulam a produção de anticorpos, que irão proteger o animal caso ele tenha contato com certos tipos de microrganismos”.
+                    A imunização protege não apenas o pet, mas também a sua família. Existem doenças como a raiva, leptospirose e giárdia que podem ser transmitidas dos animais para o ser humano. “Com as vacinas, diminuímos consideravelmente a chance destas transmissões” nos adverte Marina.
                 </p>
                 <p><b>
-                    R$ 232,69
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/filhotesgrandes.png">
-                <p>
-                    Ração Royal Canin maxi junior - Cães filhotes de raças grandes - 15kg
-                </p>
-                <p><b>
-                    R$ 248,89
-                </b></p>
-            </div>
-        </div>
-        <div class="content" style="margin-left: 24%; float: left;">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/habtatrilovo.png">
-                <p>
-                    Habitat Chalesco Para Hamsters Habitrail Ovo Simples Branco e Laranja
-                </p>
-                <p><b>
-                    R$ 229,90
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/gatosadultos.png">
-                <p>
-                    Ração umida Royal Canin sachê sterilised - gatos adultos - 85g 
-                </p>
-                <p><b>
-                    R$ 6,29
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/goldengatosadultos.png">
-                <p>
-                    Ração Golden Duo para Gatos Adultos Sabor Cordeiro e Salmão
-                </p>
-                <p><b>
-                    R$ 43,90
-                </b></p>
-            </div>
-        </div>
-        <div class="content" style="margin-left: 24%; float: left;">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/nutropico.png">
-                <p>
-                    Ração nutrópico hamster - 5kg
-                </p>
-                <p><b>
-                    R$ 216,90
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/ratofitness.png">
-                <p>
-                    Bola de Exercício Chalesco para Hamster Transparente
-                </p>
-                <p><b>
-                    R$ 47,99
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/racaoalconcarnivoros.png">
-                <p>
-                    Ração Alcon Carnívoros para Peixes
-                </p>
-                <p><b>
-                    R$ 22,50
+                    Primeiras doses
+                    As vacinas devem ser aplicadas quando o animal ainda é filhote. O protocolo deve ser iniciado após 45 dias de vida e seguido de acordo com as recomendações de seu veterinário. Depois disso, é preciso realizar o reforço anualmente ou conforme indicado pelo profissional de sua confiança.
                 </b></p>
             </div>
         </div>

@@ -106,11 +106,15 @@
         <div class="content" style="margin-left: 24%; float: left;">
             <div class="col-3 bloco-texto bloco-imagem">
                 <img src="assets/img/pit_cornio.png">
-                <p><b>Roupinhas</b></p>
+                <li>
+                    <a href="{{route('roupa')}}">Roupas</a>
+                </li>
             </div>
             <div class="col-3 bloco-texto bloco-imagem">
                 <img src="assets/img/vacina.png">
-                <p><b>Vacinação</b></p>
+                <li>
+                    <a href="{{route('vacina')}}">Vacinação</a>
+                </li>
                 <p>A vacina é responsabilidade do Médico Veterinário, não podendo ser aplicada por outra pessoa, pois somente o Médico Veterinário está apto a examinar...
             </div>
             <div class="col-3 bloco-texto bloco-imagem">

@@ -89,16 +89,16 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">Ou use o seu E-mail para logar:</p>
-                <form class="form" action="#" method="POST">
-                
+            <form class="form" action="{{route('logar')}}" method="POST">
+                    @csrf
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" name="login" placeholder="E-mail">
+                        <input type="email" name="email" placeholder="E-mail">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="senha_login" placeholder="Senha">
+                        <input type="password" name="senha" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">

@@ -17,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/shop', 'shopController@shop')->name('shop');
+
+Route::get('/vacina', 'VacinaController@vacina')->name('vacina');
+
+Route::get('/roupa', 'RoupaController@roupa')->name('roupa');
 /*.^^^^^^^^^^^^^^^^^ DAR NOME A ROTA */
 /*POST É USADO QUANDO TEM INFORMAÇÕES PESSOAIS (EMAIL, SENHAS, ETC...)*/
 
 Route::get('/login', 'LoginController@login')->name('login');
+Route::post('/logar', 'LoginController@logar')->name('logar');

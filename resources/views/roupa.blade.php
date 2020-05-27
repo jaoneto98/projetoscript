@@ -43,10 +43,10 @@
                         <a href="{{route('index')}}">Inicio</a>
                     </li>
                     <li>
-                        <a href="{{route('shop')}}">Serviços</a>
+                        <a href="">Serviços</a>
                     </li>
                     <li>
-                        <a href="">Shop</a>
+                        <a href="{{route('shop')}}">Shop</a>
                     </li>
                     <li>
                         <a href="">Blog</a>
@@ -70,88 +70,41 @@
     <div class="col-100 bloco-imagens-texto">
         <div class="content" style="margin-left: 24%; float: left;">
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/bebedouro.png">
-                <p>
-                    Bebedouro chalesco hamster bico azul
-                </p>
+                <img src="assets/img/formangatopfv.jpg">
                 <p><b>
-                    R$ 26,90
+                    R$ 79,90 M
                 </b></p>
             </div>
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/caesadultos.png" >
-                <p>
-                    Ração Royal Canin maxi - Cães adultos - 15kg
-                </p>
+                <img src="assets/img/gatochu.jpg" >
                 <p><b>
-                    R$ 232,69
+                    R$ 69,90 M
                 </b></p>
             </div>
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/filhotesgrandes.png">
-                <p>
-                    Ração Royal Canin maxi junior - Cães filhotes de raças grandes - 15kg
-                </p>
+                <img src="assets/img/tocthorro.png">
                 <p><b>
-                    R$ 248,89
+                    R$ 89,90 G
                 </b></p>
             </div>
         </div>
         <div class="content" style="margin-left: 24%; float: left;">
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/habtatrilovo.png">
-                <p>
-                    Habitat Chalesco Para Hamsters Habitrail Ovo Simples Branco e Laranja
-                </p>
+                <img src="assets/img/piracat.jpg">
                 <p><b>
-                    R$ 229,90
+                    R$ 69,90 M
                 </b></p>
             </div>
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/gatosadultos.png">
-                <p>
-                    Ração umida Royal Canin sachê sterilised - gatos adultos - 85g 
-                </p>
+                <img src="assets/img/pit_agente_naval.jpg">
                 <p><b>
-                    R$ 6,29
+                    R$ 69,90 G
                 </b></p>
             </div>
             <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/goldengatosadultos.png">
-                <p>
-                    Ração Golden Duo para Gatos Adultos Sabor Cordeiro e Salmão
-                </p>
+                <img src="assets/img/pit_cornio.png">
                 <p><b>
-                    R$ 43,90
-                </b></p>
-            </div>
-        </div>
-        <div class="content" style="margin-left: 24%; float: left;">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/nutropico.png">
-                <p>
-                    Ração nutrópico hamster - 5kg
-                </p>
-                <p><b>
-                    R$ 216,90
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/ratofitness.png">
-                <p>
-                    Bola de Exercício Chalesco para Hamster Transparente
-                </p>
-                <p><b>
-                    R$ 47,99
-                </b></p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="assets/img/racaoalconcarnivoros.png">
-                <p>
-                    Ração Alcon Carnívoros para Peixes
-                </p>
-                <p><b>
-                    R$ 22,50
+                    R$ 89,90 G
                 </b></p>
             </div>
         </div>
