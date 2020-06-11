@@ -11,12 +11,12 @@ class LoginController extends Controller{
     }
 
     public function logar(Request $request) {
-        echo $request->email;
-
-        $request->validate([
-            'email' =>  'required|email',
-            'senha' =>  'required'
-        ]);
+        
+        if ($request->email == 'teste@teste.com' && $request->senha == '1234') {
+            session(['nome' => 'teste']);
+            return redirect()->route('vacina.blade.php');
+        } else
+            return redirect('login.blade.php')->with('erro','Login ou Senha Invalida');
     }
 
 } 
