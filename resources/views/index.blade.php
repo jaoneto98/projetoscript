@@ -203,6 +203,21 @@
             </p>
         </div>
     </div>
+
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('ZmFlbDoxNjUxYjVkOS0wODk2LTQ4NTEtOGJjMS00MWFhNDNjYTZmM2E=')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .withCustomCommonUrl('https://chat.blip.ai/')
+                .build();
+            }
+        })();
+    </script>
+
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
