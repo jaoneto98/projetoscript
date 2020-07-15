@@ -15,20 +15,20 @@ class LoginController extends Controller{
         $inputs = $request->input();
 
         if($inputs["logEmail"] == ""){
-            return view("login")->with('erro','Preencha o email');
+            return view("login");
         }
         if($inputs["logSenha"] == ""){
-            return view("login")->with('erro','Preencha o senha');
+            return view("login");
         }
 
         $Usuario = Usuario::where('email','=',$inputs["logEmail"])->first();
 
         if(!isset($Usuario)){
-            return view("login")->with('erro','Email não cadastrado');
+            return view("login");
         }
 
         if(md5($inputs["logSenha"]) != $Usuario->password){
-            return view("login")->with('erro','Senha incorreta');      
+            return view("login");      
         }
 
         session(['name' => $Usuario->name]);
@@ -51,16 +51,16 @@ class LoginController extends Controller{
         $Usuarios = Usuario::where('email','=',$inputs["cadEmail"])->count();
         
         if($inputs["cadNome"] == ""){
-            return view("login")->with('erro','Preencha o nome');
+            return view("login");
         }
         if($inputs["cadEmail"] == ""){
-            return view("login")->with('erro','Preencha o email');
+            return view("login");
         }
         if($inputs["cadSenha"] == ""){
-            return view("login")->with('erro','Preencha o senha');
+            return view("login");
         }
         if($Usuarios > 0){
-            return view("login")->with('erro','Email ja cadastrado');
+            return view("login");
         }
 
         $Usuario = new Usuario();
