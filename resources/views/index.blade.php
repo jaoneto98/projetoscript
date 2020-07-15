@@ -61,9 +61,12 @@
             </div>
             <div class="busca">
                 <input placeholder="Pesquisar" type="text" />
-                <a href="{{route('login')}}">
-                    <img src="assets/img/walking.png" style="position:relative;top:10" align="right" />
-                </a>
+                @if(session('name'))
+                    <a class="logado" style="color: rgb(0, 0, 0);">{{session('name')}}</a>
+                    <a class="logout" style="color: rgb(255, 0, 0);" href="{{route('logout')}}">Logout </a>
+                @else
+                    <a href="{{route('login')}}"><img src="assets/img/walking.png" style="position:relative;top:10" allign="right" /></a>
+                @endif
             </div>
         </div>
     </main>

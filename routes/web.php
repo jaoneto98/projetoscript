@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 /*GET É USADO COMO PADRÃO*/
+
+
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/shop', 'shopController@shop')->name('shop');
@@ -24,5 +26,13 @@ Route::get('/roupa', 'RoupaController@roupa')->name('roupa');
 /*.^^^^^^^^^^^^^^^^^ DAR NOME A ROTA */
 /*POST É USADO QUANDO TEM INFORMAÇÕES PESSOAIS (EMAIL, SENHAS, ETC...)*/
 
-Route::get('/login', 'LoginController@login')->name('login')->middleware('LoginMiddleware.php');
+Route::get('/login', 'LoginController@login')->name('login');
+
 Route::post('/logar', 'LoginController@logar')->name('logar');
+
+Route::post('/cadastrar', 'LoginController@cadastrar')->name('cadastrar');
+
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
+use App\Models\Usuario;
+

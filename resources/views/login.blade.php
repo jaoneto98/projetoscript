@@ -40,29 +40,32 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">Ou use seu E-mail para:</p>
-                <form class="form" action="#" method="POST">
+                {{ Form::open(array('url' => route('cadastrar'), 'method' => 'post', 'class' => 'form')) }}
+                <!-- <form class="form" action="{{route('cadastrar')}}" method="POST"> -->
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Nome" name="cadNome">
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail">
+                        <input type="email" placeholder="E-mail" name="cadEmail">
                     </label>
                     
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" name="cadSenha">
                     </label>
                     
-                    
-                    <button class="btn btn-second">
-                        <a href="{{route('index')}}">
-                            Cadastrar
-                        </a>
-                    </button>        
-                </form>
+                    @if(isset($erro))
+                    <label class="label-input" for="">
+                        ERRO: {{ $erro }}
+                    </label>
+                    @endif
+
+                    <button type="submit" class="btn btn-second" onclick="submit()">Cadastrar</button>
+                <!-- </form> -->
+                {{ Form::close() }}
             </div><!-- second column -->
         </div><!-- first content -->
         <div class="content second-content">
@@ -89,27 +92,30 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">Ou use o seu E-mail para logar:</p>
-            <form class="form" action="{{route('logar')}}" method="POST">
-                    @csrf
+            
+            
+                {{ Form::open(array('url' => route('logar'), 'method' => 'post', 'class' => 'form')) }}
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" name="email" placeholder="E-mail">
+                        <input type="email" placeholder="E-mail" name="logEmail">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input type="password" placeholder="Senha"  name="logSenha">
                     </label>
                 
+                    @if(isset($erro))
+                    <label class="label-input" for="">
+                        ERRO {{ $erro }}
+                    </label>
+                    @endif
+
                     <a class="password" href="#">
                         Esqueceu sua senha?
                     </a>
-                    <button class="btn btn-second">
-                        <a href="{{route('index')}}">
-                            Entrar
-                        </a>
-                    </button>
-                </form>
+                    <button type="submit" class="btn btn-second" onclick="submit()">Logar</button>
+                {{ Form::close() }}
             </div><!-- second column -->
         </div><!-- second-content -->
     </div>
